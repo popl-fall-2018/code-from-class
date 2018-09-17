@@ -1,7 +1,9 @@
 
 class Person
+  include Comparable
 
   attr_accessor :age
+  attr_reader :name
 
   # def age
   #   @age
@@ -28,8 +30,8 @@ class Person
     @name
   end
 
-  def == (other)
-    @name == other.to_s and @age == other.age
+  def <=> (other_person)
+    @name <=> other_person.name
   end
 
 end
