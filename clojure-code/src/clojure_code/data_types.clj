@@ -69,6 +69,13 @@ lines"
 (mod 10 3)
 
 
+(conj '(10 11 12) 4)
+(conj [10 11 12] 4)
 
+(concat '(1 2 3) '(4 5 6))
+(vec (concat [1 2 3] [4 5 6]))
 
+(vec '(1 2 3))
+
+(apply list [1 2 3])
 
